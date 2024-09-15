@@ -1,0 +1,200 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: 0 auto; 
+  overflow: hidden;
+  border-radius: 12px; 
+  
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-slide {
+  position: relative;
+ 
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel button.prev {
+  left: 0px;
+}
+
+.carousel button.next {
+  right: 0px;
+}
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.left-enter-active {
+  animation: leftInAnimation 0.4s ease-in-out;
+}
+
+.left-leave-active {
+  animation: leftOutAnimation 0.4s ease-in-out;
+}
+
+@keyframes leftInAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes leftOutAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.right-enter-active {
+  animation: rightInAnimation 0.4s ease-in-out;
+}
+
+.right-leave-active {
+  animation: rightOutAnimation 0.4s ease-in-out;
+}
+
+@keyframes rightInAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rightOutAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(+100%);
+  }
+}
+
+
+.counter div {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #333;
+}
+
+
+
+.btn-green1 {
+  background-color: green;
+  
+}
+
+.btn-green1:hover {
+  background-color: darkgreen;
+}
+
+.btn-red2 {
+  background-color: red;
+  
+}
+
+.btn-red2:hover {
+  background-color: darkred;
+}
+
+.btn-reset {
+  background-color: blue;
+  
+}
+
+.btn-reset:hover {
+  background-color: darkblue;
+}
+#appp {
+  margin-top: 40px; /* Add space between carousel and counter */
+  text-align: center; /* Center align the counter */
+}
+/* Styling untuk CounterButton */
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.count-display {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+.button-wrapper {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+  border: 2px solid #333; 
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0; 
+}
+
+
+
+.container {
+  display: flex;
+  border: 4px solid #333;
+  border-radius: 5px;
+  padding: 5;
+  margin-top: 25px;
+}
+.color {
+  display: block;
+  width: 60px;
+  height: 50px;
+  margin: 0 1px;
+  cursor: pointer;
+  border: 2px solid #FFF;
+}
